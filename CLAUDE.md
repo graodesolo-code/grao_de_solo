@@ -19,8 +19,8 @@ Navbar → Hero → Atelier (manifesto) → Setores (residencial + urbano) → P
 React 19 · Vite 6 · Tailwind v4 (`@theme inline`) · shadcn/ui sobre `@base-ui/react` · React Router · React Query · Supabase (opcional).
 
 ## Integrações
-- **Formulário de contacto**: `src/services/contact.ts` → edge function `submit-contact` (grava em `contact_messages`, notifica via Resend opcional). **Fallback `mailto:`** quando não há Supabase ou em falha — o site funciona sempre.
-- Supabase é **opcional em dev**; obrigatório só para persistir mensagens. Ver `SETUP.md`.
+- **Formulário de contacto**: `src/services/contact.ts` → **Web3Forms** (gratuito, sem backend). Faz `POST` para `api.web3forms.com/submit` com a `VITE_WEB3FORMS_KEY` do `.env`; as mensagens chegam por email a `graodesolo@gmail.com`. **Fallback `mailto:`** quando não há key ou em falha de rede — o site funciona sempre. Honeypot `company` (lido localmente e como `botcheck` no Web3Forms).
+- A edge function `submit-contact` + tabela `contact_messages` (Supabase) ficam como alternativa legada/opcional, não usadas pelo frontend.
 
 ## Convenções
 - Componentes **< 150 linhas**, UI separada de lógica (hooks/services), mobile-first.
