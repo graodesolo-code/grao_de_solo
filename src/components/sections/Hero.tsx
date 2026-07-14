@@ -46,15 +46,15 @@ export function Hero() {
           </Reveal>
 
           <Reveal delay={200} className="flex flex-wrap items-center gap-3">
-            <Cta href={hero.ctaPrimary.href} variant="solid" withArrow>
-              {hero.ctaPrimary.label}
-            </Cta>
             <Cta
               href={hero.ctaSecondary.href}
               variant="outline"
               className="border-paper/40 text-paper hover:border-paper hover:bg-paper/10"
             >
               {hero.ctaSecondary.label}
+            </Cta>
+            <Cta href={hero.ctaPrimary.href} variant="solid" withArrow>
+              {hero.ctaPrimary.label}
             </Cta>
           </Reveal>
         </div>

@@ -6,7 +6,7 @@ import { Reveal } from "@/components/shared/Reveal";
 /**
  * Galeria de trabalhos. Grid uniforme com proporção constante (aspect 4/3),
  * para que todas as linhas fechem à mesma altura e o fundo fique sempre liso,
- * sem espaços brancos. A legenda (alt) revela-se em hover sobre gradiente subtil.
+ * sem espaços brancos. As imagens têm um leve zoom em hover; sem legendas.
  */
 export function Gallery() {
   return (
@@ -28,15 +28,11 @@ export function Gallery() {
                   loading="lazy"
                   className="aspect-[4/3] w-full object-cover transition-transform duration-[1000ms] ease-out group-hover:scale-[1.05]"
                 />
-                {/* Gradiente - assenta a legenda e dá peso wabi-sabi */}
+                {/* Gradiente subtil - dá peso wabi-sabi (sem legenda) */}
                 <div
                   aria-hidden
-                  className="absolute inset-0 bg-gradient-to-t from-foreground/55 via-foreground/10 to-transparent opacity-70 transition-opacity duration-500 group-hover:opacity-90"
+                  className="absolute inset-0 bg-gradient-to-t from-foreground/55 via-foreground/10 to-transparent opacity-70"
                 />
-                <figcaption className="absolute inset-x-0 bottom-0 translate-y-1 p-5 text-sm leading-snug text-pretty text-paper/85 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:text-paper group-hover:opacity-100 [@media(hover:none)]:translate-y-0 [@media(hover:none)]:text-paper [@media(hover:none)]:opacity-100">
-                  <span className="block h-px w-7 bg-sage/60" />
-                  <span className="mt-3 block">{images[key].alt}</span>
-                </figcaption>
               </figure>
             </Reveal>
           ))}
