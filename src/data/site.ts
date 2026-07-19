@@ -16,6 +16,7 @@ export const nav = [
   { label: "Setores", href: "#setores" },
   { label: "Processo", href: "#processo" },
   { label: "Trabalhos", href: "#trabalhos" },
+  { label: "Outros serviços", href: "#servicos" },
   { label: "Contacto", href: "#contacto" },
 ] as const;
 

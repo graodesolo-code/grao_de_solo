@@ -23,10 +23,10 @@ export function Home() {
         <Hero />
         <Manifesto />
         <Sectors />
-        <Expertise />
         <Process />
         <Gallery />
         <Philosophy />
+        <Expertise />
         <Contact />
       </main>
       <Footer />
