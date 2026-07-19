@@ -109,6 +109,31 @@ export const sectors: Sector[] = [
   },
 ];
 
+export const expertise = {
+  id: "servicos",
+  eyebrow: "Serviços Especializados",
+  title: "O nosso know-how ao seu dispor.",
+  lead: "Para além do projeto de paisagem, acompanhamos os processos técnicos e legais que dão viabilidade à sua propriedade. Serviços que poderão ser do seu interesse:",
+  items: [
+    {
+      title: "Licenciamento urbanístico",
+      desc: "Instrução e acompanhamento dos processos junto das entidades competentes, do pedido à aprovação.",
+    },
+    {
+      title: "Desafetação de RAN e REN",
+      desc: "Processos de desafetação da Reserva Agrícola Nacional e da Reserva Ecológica Nacional para libertar o potencial do terreno.",
+    },
+    {
+      title: "Abate de espécies protegidas",
+      desc: "Pedidos de licenciamento para o abate de exemplares e espécies sujeitas a proteção legal.",
+    },
+    {
+      title: "Recuperação de propriedades rústicas",
+      desc: "Reativação do potencial produtivo de terrenos rústicos e explorações agroflorestais.",
+    },
+  ],
+} as const;
+
 export const process = {
   id: "processo",
   eyebrow: "O Nosso Processo",

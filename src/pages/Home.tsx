@@ -3,6 +3,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Hero } from "@/components/sections/Hero";
 import { Manifesto } from "@/components/sections/Manifesto";
 import { Sectors } from "@/components/sections/Sectors";
+import { Expertise } from "@/components/sections/Expertise";
 import { Process } from "@/components/sections/Process";
 import { Gallery } from "@/components/sections/Gallery";
 import { Philosophy } from "@/components/sections/Philosophy";
@@ -22,6 +23,7 @@ export function Home() {
         <Hero />
         <Manifesto />
         <Sectors />
+        <Expertise />
         <Process />
         <Gallery />
         <Philosophy />
